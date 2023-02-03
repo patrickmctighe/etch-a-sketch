@@ -51,8 +51,13 @@ function populateBoard(size){
     click= !click;
     if (click) {
         document.querySelector(".mode").textContent = "Status: Ready to draw";
+        document.querySelector(".mode").style.color = "yellow";
     } else{
-        document.querySelector(".mode").textContent = "Status: Click to draw!";
+        document.querySelector(".mode").textContent = "Status: Click to draw!"; 
+        document.querySelector(".mode").style.color = "plum";
     }
     }
    })
+
+
+   

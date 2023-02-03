@@ -1,14 +1,47 @@
-
+.body{
+    background:black;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .board { 
    width: 500px;
    height: 500px;
    display: grid;
-    
-    
+   background: #fff;
+   font-family: Montserrat, sans-serif;;
+   font-size: 24px;
+   line-height: 30px;
+   font-weight: bold;
+   color: #009688;
+   padding: 40px;
+   box-shadow:
+       inset #009688 0 0 0 5px, 
+     inset #059c8e 0 0 0 1px, 
+     inset #0cab9c 0 0 0 10px, 
+     inset #1fbdae 0 0 0 11px, 
+     inset #8ce9ff 0 0 0 16px, 
+     inset #48e4d6 0 0 0 17px, 
+     inset #e5f9f7 0 0 0 21px, 
+     inset #bfecf7 0 0 0 22px;
+   text-shadow: 3px 3px 1px #bfecf7;
 }
 
 .gameName {
+    
+    text-shadow: -4px 4px #ef3550,
+               -8px 8px #f48fb1,
+               -12px 12px #7e57c2,
+               -16px 16px #2196f3,
+               -20px 20px #26c6da,
+               -24px 24px #43a047,
+               -28px 28px #eeff41,
+               -32px 32px #f9a825,
+               -36px 36px #ff5722;
     text-transform: uppercase;
     background-image: linear-gradient(
       -225deg,
@@ -37,22 +70,20 @@
       background-position: 200% center;
     }
 }
-    .buttCont{
+  .buttCont{
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
     gap: 20px;
+    margin-bottom: 25px;
 }
-
-    .button{
-    height: 40px;
+  .button{
+    height: 80px;
     width: 80px;   
    
 }
-
-
-    #black{
+   #black{
     background-color: black;
     color: white;
 }
@@ -66,5 +97,45 @@
     background-color: red;
     color:yellow;
 }
-
+.set{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 3px rgba(148,0,211,1),
+0px 0px 0px 6px rgba(75,0,130,1),
+0px 0px 0px 9px rgba(0,0,255,1),
+0px 0px 0px 12px rgba(0,255,0,1),
+0px 0px 0px 15px rgba(255,255,0,1),
+0px 0px 0px 18px rgba(255,127,0,1),
+0px 0px 0px 21px rgba(255,0,0,1);
+margin-top: 10px;
+}
+.button {
+   font-size: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.setText{
+    font-weight: 900;
+    border-color:transparent;
+    
+}
+.setButton{
+    border-color: transparent;
+    background-color: transparent;
+    font-weight: 900;
+    
+}
+.mode{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: yellow;
+}
    
