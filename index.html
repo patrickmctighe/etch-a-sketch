@@ -9,7 +9,25 @@
     <title>Etchy-Sketchy</title>
 </head>
 <body>
-    <div class="container"></div> 
-    <script src="index.js"></script>
+    <div class="flex">
+    <div><h1 class="gameName">Etchy-Sketchy</h1></div> 
+    <div class="mode"> Status: Ready to Draw!</div>
+    <div class="content">
+    <div class="board"></div>  
+    <div class="buttCont">
+        <button onclick="changeColor('black')" id="black" class="button">Black</button>
+        <button onclick="changeColor('rainbow')" id="rainbow" class="button">Rainbow</button>
+        <button onclick="changeColor('grey')" id="greyscale" class="button">GreyScale</button>
+        <button onclick="changeColor('white')" id="eraser" class="button">Eraser</button>
+        <button onclick="resetBoard()" id="reset" class="button">Reset</button>
+    </div>
+    <div>
+         <input type="text" placeholder="Size of board" value="16" onChange="changeSize(this.value)"/>
+        <button>Set Size</button>
+    </div>
+    </div>
+   </div> 
+   
 </body>
+<script src="index.js"></script>
 </html>

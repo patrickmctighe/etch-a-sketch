@@ -1,13 +1,70 @@
-*{
-    box-sizing: border-box;
+
+
+.board { 
+   width: 500px;
+   height: 500px;
+   display: grid;
+    
+    
 }
 
-.container { 
+.gameName {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      hsl(327, 76%, 46%) 0%,
+      hsl(192, 78%, 49%) 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
 }
-.hover:hover{
-    fill:black;
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
 }
+    .buttCont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    gap: 20px;
+}
+
+    .button{
+    height: 40px;
+    width: 80px;   
+   
+}
+
+
+    #black{
+    background-color: black;
+    color: white;
+}
+    #rainbow{background: #44acab;
+    background-image: linear-gradient(90deg, #6e40aa, #6154c8, #4c6edb, #368ce1, #24aad8, #1ac7c2, #1ddea3, #30ee83, #52f667, #7ef658, #7ef658);}
+    #greyscale {
+    background-color: grey;
+    color: lightgrey;
+}
+    #reset{
+    background-color: red;
+    color:yellow;
+}
+
+   
